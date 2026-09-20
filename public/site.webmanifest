@@ -1,0 +1,21 @@
+{
+  "name": "Pizza Pro Shergarh",
+  "short_name": "Pizza Pro",
+  "description": "Hot & Fresh Pizza, Burgers, Shawarma & Fast Food Delivery in Shergarh, Punjab.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#18181b",
+  "theme_color": "#dc2626",
+  "icons": [
+    {
+      "src": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=192&q=80",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=512&q=80",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}

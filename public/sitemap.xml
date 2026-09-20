@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Home Page -->
+  <url>
+    <loc>https://pizzapro.pk/</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Pizza Pro Shergarh Hot &amp; Fresh Pizza Delivery</image:title>
+    </image:image>
+  </url>
+
+  <!-- Special Pizza Deals -->
+  <url>
+    <loc>https://pizzapro.pk/#deals</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Full Menu -->
+  <url>
+    <loc>https://pizzapro.pk/#menu</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Pizzas Category -->
+  <url>
+    <loc>https://pizzapro.pk/#pizzas</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Burgers & Shawarma Category -->
+  <url>
+    <loc>https://pizzapro.pk/#burgers-shawarma</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Sides & Drinks Category -->
+  <url>
+    <loc>https://pizzapro.pk/#sides-drinks</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Track Order -->
+  <url>
+    <loc>https://pizzapro.pk/#track</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact & Location -->
+  <url>
+    <loc>https://pizzapro.pk/#contact</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
