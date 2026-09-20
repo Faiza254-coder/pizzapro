@@ -1,0 +1,72 @@
+{
+  "entities": {
+    "users": {
+      "title": "Users",
+      "description": "User profile data",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "phone": { "type": "string" },
+        "loyaltyPoints": { "type": "number" },
+        "savedAddresses": { "type": "array", "items": { "type": "string" } },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id"]
+    },
+    "orders": {
+      "title": "Orders",
+      "description": "Customer pizza orders",
+      "type": "object",
+      "properties": {
+        "orderId": { "type": "string" },
+        "userId": { "type": "string" },
+        "customerName": { "type": "string" },
+        "customerPhone": { "type": "string" },
+        "customerEmail": { "type": "string" },
+        "deliveryAddress": { "type": "string" },
+        "items": { "type": "array" },
+        "subtotal": { "type": "number" },
+        "discount": { "type": "number" },
+        "deliveryFee": { "type": "number" },
+        "totalAmount": { "type": "number" },
+        "paymentMethod": { "type": "string" },
+        "paymentStatus": { "type": "string" },
+        "orderStatus": { "type": "string" },
+        "orderType": { "type": "string" },
+        "notes": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "estimatedTimeMinutes": { "type": "number" },
+        "barcodeValue": { "type": "string" }
+      },
+      "required": ["orderId", "customerName", "customerPhone", "totalAmount"]
+    },
+    "menu_items": {
+      "title": "MenuItems",
+      "description": "Menu items catalog",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "category": { "type": "string" },
+        "description": { "type": "string" },
+        "price": { "type": "number" }
+      }
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "#/entities/users",
+      "description": "User account and profile details"
+    },
+    "/orders/{orderId}": {
+      "schema": "#/entities/orders",
+      "description": "Customer order records"
+    },
+    "/menu_items/{itemId}": {
+      "schema": "#/entities/menu_items",
+      "description": "Menu catalog items"
+    }
+  }
+}
