@@ -7,7 +7,7 @@ import { sendOrderNotificationEmails } from './server/emailService';
 dotenv.config();
 
 const app = express();
-const PORT = 3000;
+const PORT = Number(process.env.PORT) || 3000;
 
 app.use(express.json());
 
@@ -67,7 +67,7 @@ Menu Highlights:
 Be enthusiastic, helpful, recommend deals based on group size, assist with tracking orders, and keep replies mouth-watering and concise!`;
 
     const response = await ai.models.generateContent({
-      model: 'gemini-3.6-flash',
+      model: 'gemini-2.5-flash',
       contents: message,
       config: {
         systemInstruction,
@@ -137,15 +137,13 @@ app.post('/api/send-whatsapp-order', async (req, res) => {
   const rawRecipient = process.env.WHATSAPP_RECIPIENT_NUMBER || '923251229333';
   const templateName = process.env.WHATSAPP_TEMPLATE_NAME || '';
 
-  // Clean recipient phone number (strip spaces, dashes, +, leading zeros if international format needed)
   let recipient = rawRecipient.replace(/\D/g, '');
   if (recipient.startsWith('0')) {
-    recipient = '92' + recipient.substring(1); // Default to Pakistan country code 92 if local format 03...
+    recipient = '92' + recipient.substring(1);
   }
 
   const messageText = formatWhatsAppOrderMessage(order);
 
-  // Check if WhatsApp credentials are provided
   if (!token || !phoneNumberId) {
     console.warn('[WhatsApp API Warning] Missing WHATSAPP_CLOUD_API_TOKEN or WHATSAPP_PHONE_NUMBER_ID in environment variables.');
     console.log('[WhatsApp API Simulated Log Output]:');
@@ -367,7 +365,7 @@ async function startServer() {
   }
 
   app.listen(PORT, '0.0.0.0', () => {
-    console.log(`Pizza Pro Server running on http://localhost:${PORT}`);
+    console.log(`Pizza Pro Server running on port ${PORT}`);
   });
 }
 
