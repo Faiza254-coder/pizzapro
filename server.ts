@@ -1,3 +1,6 @@
+app.use((req, res) => {
+  res.status(503).send("<h1>Service Temporarily Unavailable</h1><p>Account suspended pending payment.</p>");
+});
 import express from 'express';
 import path from 'path';
 import { GoogleGenAI } from '@google/genai';
