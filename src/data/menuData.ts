@@ -29,7 +29,7 @@ export const STORE_INFO = {
 // High quality food photos tailored for fast-food & pizza representation
 export const BRAND_ASSETS = {
   // Brand Logo
-  logo: '/logo.png',
+  logo: 'https://github.com/Faiza254-coder/pizzapro/blob/main/public/logo.png?raw=true',
   squadPhoto: '/squad.jpg',
   boxImage: 'https://images.unsplash.com/photo-1590947132387-155cc02f3212?auto=format&fit=crop&w=1000&q=80',
   heroBannerBg: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1600&q=80',
