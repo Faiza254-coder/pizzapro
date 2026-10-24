@@ -1,3 +1,4 @@
+import pizzaLogo from '../assets/images/logo.png';
 import React, { useEffect, useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ArrowRight, Volume2, VolumeX, Sparkles, Flame, Clock } from 'lucide-react';
@@ -285,12 +286,12 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({ onFinish }) => {
               }}
               className="relative z-10 p-2 sm:p-3 rounded-full bg-white shadow-[0_20px_60px_rgba(220,38,38,0.25)] border-4 border-red-600/90 ring-8 ring-red-100 flex items-center justify-center group"
             >
-              <img
-                src={BRAND_ASSETS.logo}
-                alt="Pizza Pro Official Logo"
-                referrerPolicy="no-referrer"
-                className="w-48 h-48 sm:w-60 sm:h-60 md:w-72 md:h-72 object-cover rounded-full shadow-inner transform group-hover:scale-105 transition-transform duration-500"
-              />
+<img
+  src={pizzaLogo}
+  alt="Pizza Pro Official Logo"
+  referrerPolicy="no-referrer"
+  className="w-48 h-48 sm:w-60 sm:h-60 md:w-72 md:h-72 object-cover rounded-full shadow-inner transform group-hover:scale-105 transition-transform duration-500"
+/>
             </motion.div>
           </div>
 
