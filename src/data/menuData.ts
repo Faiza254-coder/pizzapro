@@ -1,3 +1,5 @@
+yes yes no no
+
 import { MenuItem, PosterBanner, Review, Coupon } from '../types';
 export const STORE_INFO = {
   name: 'Pizza Pro',
