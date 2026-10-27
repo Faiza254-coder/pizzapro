@@ -1,11 +1,3 @@
-return (
-  <div className="min-h-screen flex items-center justify-center bg-zinc-900 text-white font-sans text-center p-6">
-    <div>
-      <h1 className="text-2xl font-bold mb-2">Service Temporarily Suspended</h1>
-      <p className="text-zinc-400 text-sm">Please contact the administrator or developer to restore access.</p>
-    </div>
-  </div>
-);
 import React, { useState, useMemo, useEffect } from 'react';
 import { SplashScreen } from './components/SplashScreen';
 import { Navbar } from './components/Navbar';
@@ -402,3 +394,11 @@ export function App() {
 }
 
 export default App;
+return (
+  <div className="min-h-screen flex items-center justify-center bg-zinc-900 text-white font-sans text-center p-6">
+    <div>
+      <h1 className="text-2xl font-bold mb-2">Service Temporarily Suspended</h1>
+      <p className="text-zinc-400 text-sm">Please contact the administrator or developer to restore access.</p>
+    </div>
+  </div>
+);
